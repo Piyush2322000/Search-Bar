@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Search Bar</title>
+  </head>
+  <body>
+    <div class="boxContainer">
+      <table class="elementSearch">
+        <tr>
+          <td>
+            <input type="search"  value="" placeholder="Search" class="search" onchange="openPage()" />
+          </td>
+          <td>
+            <a href="#" class="searchMe"><i class="material-icons searchBar" >search</i></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+        function openPage() {
+            
+            var x = document.querySelector(".search").value;
+
+            if (x === "ajmer" ) {
+                window.open("/Ajmer.html");
+            }
+
+            else if (x === "Ajmer" ) {
+                window.open("/Ajmer.html");
+            }
+
+            else if (x === "AJMER" ) {
+                window.open("/Ajmer.html");
+            }
+        
+
+        
+        }
+    </script>
+  </body>
+</html>
